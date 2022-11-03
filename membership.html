@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 양식</title>
+    <link href="./css/basic.css" rel="stylesheet" />
+
+    <style>
+        .member_form {
+            margin-top: 40px;
+            width: 960px;
+        }
+        table {
+            border-collapse: 0px;
+            border-spacing: 0px;
+            margin-bottom: 10px;
+            border-top: 1px solid black;
+        }
+        td {
+            border-bottom: 1px solid black;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            letter-spacing: 1px;
+        }
+        th {
+            width: 120px;
+            padding-left: 0px;
+            text-align: center;
+            background-color: gainsboro;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        td {
+            
+        }
+        .table_1 {
+            height: 40px;
+            font-size: 1.2rem;
+        }
+        .input_text {
+            width: 200px;
+        }
+        .input_text_phone {
+            width: 50px;
+        }
+        .input_text_addr {
+            width: 80px;
+        }
+        .gender_btn {
+            margin-left: 20px;
+        }
+        .submit {
+            padding-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="member_form">
+        <table border="1">
+            <tr>
+                <th colspan="2" class="table_1">회원가입 양식</td>
+            </tr>
+            <tr>
+                <th>아 이 디</th>
+                <td><input type="text"  name="user_id"  id="user_id"    class="input_text"  required>
+                    &nbsp;<input type="button"    name="insert" id="insert"   class="btn" value="중복확인"></td>
+
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td><input type="password"  name="pwd"  id="pwd"    class="input_text"  required></td>
+            </tr>
+            <tr>
+                <th>비밀번호확인</th>
+                <td><input type="password"  name="pwd"  id="pwd"    class="input_text"  required></td>
+            </tr>
+            <tr>
+                <th>이 름</th>
+                <td><input type="text"  name="name" id="name"   class="input_text"  required></td>
+            </tr>
+            <tr>
+                <th>성 별</th>
+                <td class="gender_btn"><input type="radio" name="gender"   id="gender" value="m"> 남 &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender"   id="gender" value="m"> 여
+                </td>
+            </tr>
+            <tr>
+                <th>휴대폰번호</th>
+                <td><input type="text"  name="phone"    id="phone"  class="input_text_phone"> - 
+                    <input type="text"  name="phone"    id="phone"  class="input_text_phone"> - 
+                    <input type="text"  name="phone"    id="phone"  class="input_text_phone">
+                </td>
+            </tr>
+            <tr>
+                <th>이 메 일</th>
+                <td><input type="email" name="email"    id="email"></td>
+            </tr>
+            <tr>
+                <th>우편번호</th>
+                <td><input type="button"    name="addr_btn" id="addr_btn"   class="btn" value="우편번호">
+                    <input type="text"  name="addr_num"     id="addr_num"   class="input_text_addr">
+                </td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td>                <input type="text"  name="addr"     id="addr"   class="input_text"></td>
+            </tr>
+            <tr>
+                <th>상세주소</th>
+                <td>                <input type="text"  name="addr_2"     id="addr_2"   class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="submit" colspan="2">
+                    <input type="button"    name="insert" id="insert"   class="btn" value="가입하기"> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button"    name="reset" id="reset"   class="btn" value="새로작성"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

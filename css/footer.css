@@ -1,0 +1,38 @@
+      /* footer 부분 */
+      footer{
+        
+        width: 960px; /* 100% */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* background-color:aquamarine;  지울부분, 확인용 */
+    }
+    hr{
+        width: 960px;
+        border-color: blueviolet;
+        /*  margin-bottom: 10px; 수정할 부분 */
+    }
+    .footer_nav{
+        width: 960px; 
+        height: 33px;
+        line-height: 33px;  /*  줄간격,  수직정렬 */
+        text-align: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px; /* 수정할 부분 */
+    }
+    .footer_nav > a{
+        display:inline-block;
+        padding: 0px 10px;
+        font-size: 0.8rem ;  /* 10pt, 12px, 0.8rem */
+    }
+    .footer_nav > a:hover{  /* a태그 글자(요소)에 마우스가 올라오면 */
+        color: blue;
+    }
+    .addr{
+    width: 960px;
+    }
+    .addr li{
+        margin-left: 30px; /* 수정할 부분 */
+        height: 22px;
+        line-height: 22px; 
+    }

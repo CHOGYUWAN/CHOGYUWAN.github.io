@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>foodworld_main</title>
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="./css/top.css" rel="stylesheet" />
+
+    <style>
+
+        .main_logo {
+            text-align: center;
+        }
+        .main_nav{
+            
+            bottom: 10px;
+            position: absolute;
+            width: 960px;
+            text-align: center;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .main_nav li{
+            display: inline-block;
+        }
+        .main_nav li>a{
+            display: inline-block;
+            padding: 10px;
+        }
+        .main_nav li>a:hover{
+            color: blue;
+        }
+
+
+        /* 중앙부분 */
+        /* 오른쪽 부분 */
+        .main {
+            margin-left: 20px;
+        }
+        .main_top {
+            border-bottom: 3px solid green;
+            margin-bottom: 20px;
+            width: 730px;
+            margin-left: 200px;
+        }
+
+    </style>
+</head>
+<body>  
+    <!-- header 부분 -->
+    <div class="top_content">
+        <!-- 위쪽 상단 부분 -->
+        <!-- logo 부분 -->
+        <div class="logo">
+            <a href="foodworld_main.html">
+            <h1>로고!</h1>
+            </a>
+        </div>
+        <!-- 로그인 회원가입 -->
+        <div class="top_nav">
+            <a href="login.html"> 로그인 </a>
+            <a href="membership.html" target="_blank"> 회원가입 </a>
+        </div>
+        <div class="main_logo">
+            <h1>맛집? 맞지!</h1>
+        </div>
+
+        <!-- 메인 메뉴 부분 -->
+        <div class="main_nav">
+        <ul> <!-- li*7>a[href="#"]-->
+            <li><a href="introduce_site.html">회사소개</a></li> &nbsp;| &nbsp;
+            <li><a href="foodworld_area.html"> 지역맛집</a></li> &nbsp;| &nbsp;
+            <li><a href="foodworld_thismonth.html"> 이달의 맛집</a></li> &nbsp;| &nbsp;
+            <li><a href="foodworld_free.html"> 자유게시판</a></li> &nbsp;| &nbsp;
+            <li><a href="foodworld_notice.html"> 공지사항</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- main 부분 -->
+    <div class="main">
+        <div class="main_top">
+            <h2>공지사항</h2>
+        </div>
+    </div>
+
+    
+        <!-- footer 부분-->
+    <footer>
+        <!-- 정보공개 알림이 있는 부분 -->
+        <div class = "footer_nav">
+            <a href="#" target="_blank">정보공개알림</a> | 
+            <a href="#" target="_blank">개인정보처리방침</a> | 
+            <a href="#" target="_blank">이용서비스현황</a> | 
+            <a href="#" target="_blank">이용규정</a> | 
+            <a href="#" target="_blank">이메일무단수집거부</a> | 
+            <a href="#" target="_blank">전화번호안내</a> | 
+            <a href="#" target="_blank">오시는길</a>
+        </div>
+        <!-- 주소가 있는 부분 -->
+        <div class="addr">
+            <ul>
+                <li>(우)05220 서울시 강남구 테헤란로 212(역삼동)&nbsp;&nbsp;대표전화 02-1234-1234&nbsp;&nbsp;팩스번호 02-1234-4567</li>
+                <li>Copyright &copy; 맛집?맞지! All Right Reserved</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
